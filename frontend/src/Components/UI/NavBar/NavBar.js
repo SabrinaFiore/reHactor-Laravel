@@ -16,11 +16,14 @@ export default function NavBar() {
                         <li className="nav-item">
                             <Link className="nav-link active" to="/search/action/1">Search</Link>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link className="nav-link" to="/">Features</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/">Pricing</Link>
+                        </li> */}
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/sign">Sign</Link>
                         </li>
                     </ul>
                 </div>

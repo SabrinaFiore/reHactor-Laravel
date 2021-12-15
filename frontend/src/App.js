@@ -7,6 +7,7 @@ import Game from '../src/Components/Views/Game/Game';
 import Home from './Components/Views/Home/Home';
 
 import { ConfigProvider } from "./Contexts/Config";
+import Sign from './Components/Views/Sign/Sign';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/search/:genre/:num" element={<Search/>} />
           <Route path="/game/:slug" element={<Game/>} />
+          <Route path="/sign" element={<Sign/>} />
         </Routes>
         <Footer/>
       </Router>

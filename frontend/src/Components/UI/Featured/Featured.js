@@ -17,7 +17,7 @@ export default function Featured() {
     }, []);
 
     return (
-        <div className="bg-dark">
+        <div>
             <div className="container mt-5">
                 <div className="row">
                     {featured && featured.map((el) => {
