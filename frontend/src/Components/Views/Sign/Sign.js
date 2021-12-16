@@ -1,18 +1,18 @@
-import { useEffect, useState } from "react";
+import './Sign.css';
+import SingUp from "../../UI/SingUp/SingUp.1";
 
-export default function Sign() { 
-    
-    const [isLogin, setLogin] = useState(true);
-
-    return <>
-        <div className="cointainer min-vh-100">
-            <div className="row justify-content-center align-items-center min-vh-100">
-                <div className="col-12 col-md-8 col-lg-6 bg-danger">
-                    <form action="">
-
-                    </form>
+export default function Sign() {
+    return (
+        <>
+            <div className="container-fluid min-vh-100 bg">
+                <div className="cointainer">
+                    <div className="row justify-content-center align-items-center min-vh-100">
+                        <div className="col-12 col-md-8 col-lg-6">
+                            <SingUp/>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </>
+            </div>            
+        </>
+    );
 }
