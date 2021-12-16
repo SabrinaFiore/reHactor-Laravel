@@ -1,5 +1,7 @@
 /* Sing */
 
 .bg {
-    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.5), rgba(0,0,0,1)), url('../../../Assets/bg.jpg');
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.5), rgba(0,0,0,1)), url('../../../Assets/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

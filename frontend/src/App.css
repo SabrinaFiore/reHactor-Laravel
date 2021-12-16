@@ -72,12 +72,72 @@ header .overlay {
 /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element 
 
 @media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
 
-  header video {
-    display: none;
-  }
+    header video {
+      display: none;
+    }
   }
 */
+
+/* SingUp */
+
+.sign-form {
+  position: relative;
+  padding: 30px;
+}
+
+.sign-top, .sign-bottom {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 30px;
+}
+
+.sign-top {
+  top: 0px;
+}
+
+.sign-bottom {
+  bottom: 0;
+}
+
+.sign-top::before,
+.sign-bottom::before { 
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  border-left: 2px solid cyan;
+}
+
+.sign-top::before {
+  border-top: 2px solid cyan;
+}
+
+.sign-top::after {
+  border-top: 2px solid cyan;
+}
+
+.sign-bottom::before {
+  border-bottom: 2px solid cyan;
+}
+
+.sign-bottom::after {
+  border-bottom: 2px solid cyan;
+}
+
+.sign-top::after,
+.sign-bottom::after { 
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  border-right: 2px solid cyan;
+}
